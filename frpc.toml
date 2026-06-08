@@ -1,0 +1,17 @@
+serverAddr = "hk.ctfstu.com"
+serverPort = 7000
+auth.token = "Ben@2026"
+
+[[proxies]]
+name = "xxe_1780906876_1416_web"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8182
+remotePort = 8180
+
+[[proxies]]
+name = "xxe_1780906876_1416_nc"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 7780
+remotePort = 7776

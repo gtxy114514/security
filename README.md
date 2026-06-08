@@ -31,17 +31,17 @@ python3 xxe_exploit.py -t http://目标IP:端口/xxe.php -f /etc/passwd --local
 
 ## 参数说明
 
-| 参数                | 简写 | 默认值        | 说明                                          |
-| ------------------- | ---- | ------------- | --------------------------------------------- |
-| `--target`          | `-t` | **必填**      | 目标 URL，如 `http://example.com/doLogin.php` |
-| `--file`            | `-f` | `/etc/passwd` | 要读取的服务器文件路径                        |
-| `--local`           |      | `false`       | 强制本地模式，跳过 FRP（LAN 环境）            |
-| `--web-port`        |      | 自动          | Web 服务本地端口                              |
-| `--nc-port`         |      | 自动          | NC 监听本地端口                               |
-| `--web-remote-port` |      | 自动          | Web 服务 FRP 远端端口                         |
-| `--nc-remote-port`  |      | 自动          | NC 监听 FRP 远端端口                          |
-| `--nc-timeout`      |      | `30`          | 等待回传数据的超时时间（秒）                  |
-| `--frpc`            |      | 自动查找      | frpc 可执行文件路径                           |
+| 参数 | 简写 | 默认值 | 说明 |
+|------|------|--------|------|
+| `--target` | `-t` | **必填** | 目标 URL，如 `http://example.com/doLogin.php` |
+| `--file` | `-f` | `/etc/passwd` | 要读取的服务器文件路径 |
+| `--local` | | `false` | 强制本地模式，跳过 FRP（LAN 环境） |
+| `--web-port` | | 自动 | Web 服务本地端口 |
+| `--nc-port` | | 自动 | NC 监听本地端口 |
+| `--web-remote-port` | | 自动 | Web 服务 FRP 远端端口 |
+| `--nc-remote-port` | | 自动 | NC 监听 FRP 远端端口 |
+| `--nc-timeout` | | `30` | 等待回传数据的超时时间（秒） |
+| `--frpc` | | 自动查找 | frpc 可执行文件路径 |
 
 ## 工作流程
 
@@ -83,11 +83,11 @@ FRP_AUTH_TOKEN = "your_token"        # FRP 认证 Token
 
 所有文件生成在脚本所在目录：
 
-| 文件        | 说明                                     |
-| ----------- | ---------------------------------------- |
-| `1.dtd`     | 恶意 DTD 文件（PHP filter 方式读取文件） |
-| `frpc.toml` | FRP 客户端配置文件                       |
-| `frpc.log`  | FRP 运行日志                             |
+| 文件 | 说明 |
+|------|------|
+| `1.dtd` | 恶意 DTD 文件（PHP filter 方式读取文件） |
+| `frpc.toml` | FRP 客户端配置文件 |
+| `frpc.log` | FRP 运行日志 |
 
 ## 注意事项
 

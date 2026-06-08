@@ -1,0 +1,7 @@
+[1;34m2026-06-08 04:22:20.112 [I] [sub/root.go:201] start frpc service for config file [/tmp/xxe_exploit/frpc.toml] with aggregated configuration
+[0m[1;34m2026-06-08 04:22:20.112 [I] [client/service.go:308] try to connect to server...
+[0m[1;34m2026-06-08 04:22:20.514 [I] [client/service.go:328] [42ecc468b7536a1d] login to server success, get run id [42ecc468b7536a1d]
+[0m[1;34m2026-06-08 04:22:20.514 [I] [proxy/proxy_manager.go:180] [42ecc468b7536a1d] proxy added: [xxe_1780906876_1416_nc xxe_1780906876_1416_web]
+[0m[1;34m2026-06-08 04:22:20.687 [I] [client/control.go:165] [42ecc468b7536a1d] [xxe_1780906876_1416_nc] start proxy success
+[0m[1;34m2026-06-08 04:22:20.687 [I] [client/control.go:165] [42ecc468b7536a1d] [xxe_1780906876_1416_web] start proxy success
+[0m
